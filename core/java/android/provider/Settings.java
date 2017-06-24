@@ -3678,6 +3678,12 @@ public final class Settings {
         public static final String BATTERY_LOW_NOTIFICATION = "battery_low_notification";
 
         /**
+         * Whether to enable status and navigation bar color in battery saver mode.
+         * @hide
+         */
+        public static final String BATTERY_SAVER_MODE_COLOR = "battery_save_mode_color";
+
+        /**
          * Enable\Disable Bluetooth Battery bar
          * @hide
          */
@@ -4249,6 +4255,12 @@ public final class Settings {
          * @hide
          */
         public static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+
+        /**
+         * Override and forcefully disable the fullscreen keyboard
+         * @hide
+         */
+        public static final String DISABLE_FULLSCREEN_KEYBOARD = "disable_fullscreen_keyboard";
 
         /**
          * Volume key controls ringtone or media sound stream
@@ -9805,6 +9817,9 @@ public final class Settings {
 
         /**
          * Whether to sound when charger power is connected/disconnected
+         * 0 = Disable
+         * 1 = Notify on charger connected/disconnected
+         * 2 = Notify on charger connected only
          * @hide
          */
         public static final String POWER_NOTIFICATIONS_ENABLED = "power_notifications_enabled";
@@ -9814,6 +9829,12 @@ public final class Settings {
          * @hide
          */
         public static final String POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
+
+        /**
+         * Whether to use custom sound for power notification sound
+         * @hide
+         */
+        public static final String POWER_NOTIFICATION_CUSTOM_RINGTONE = "power_notification_custom_ringtone";
 
         /**
          * URI for power notification sounds
